@@ -4137,7 +4137,7 @@ var Qr,
                                         style: {
                                           "--framer-text-color": `var(--extracted-r6o4lv, var(--token-813ec4a8-3f64-40f4-ae75-c758ceafa922, rgb(99, 99, 99)))`,
                                         },
-                                        children: `This is just some description, I am not sure what to put here really.`,
+                                        children: `Vertical AI agents that explain their own decisions. No black boxes.`,
                                       }),
                                     }),
                                     className: `framer-l0ze4l`,
