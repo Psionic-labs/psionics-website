@@ -4285,6 +4285,20 @@ var Qr,
                                             }),
                                           }),
                                         }),
+                                        g(D.div, {
+                                          className: `psionics-github-container`,
+                                          children: f(`a`, {
+                                            "aria-label": `GitHub`,
+                                            className: `psionics-github-link`,
+                                            draggable: `false`,
+                                            href: `https://github.com/Psionic-labs`,
+                                            rel: `noopener noreferrer`,
+                                            target: `_blank`,
+                                            children: f(`span`, {
+                                              className: `psionics-github-icon`,
+                                            }),
+                                          }),
+                                        }),
                                         f(H, {
                                           height: 24,
                                           y:
@@ -5742,6 +5756,20 @@ var Qr,
                                               layoutId: `UFYgsov05`,
                                               width: `100%`,
                                               YgfVXmht2: `https://x.com/krutikmaru_18`,
+                                            }),
+                                          }),
+                                        }),
+                                        g(D.div, {
+                                          className: `psionics-github-container`,
+                                          children: f(`a`, {
+                                            "aria-label": `GitHub`,
+                                            className: `psionics-github-link`,
+                                            draggable: `false`,
+                                            href: `https://github.com/Psionic-labs`,
+                                            rel: `noopener noreferrer`,
+                                            target: `_blank`,
+                                            children: f(`span`, {
+                                              className: `psionics-github-icon`,
                                             }),
                                           }),
                                         }),
