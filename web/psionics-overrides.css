@@ -226,3 +226,15 @@
 .psionics-github-link:hover .psionics-github-icon {
   background-color: #000;
 }
+
+/* Footer logo: replace CSS-mask icon div with actual image. */
+.framer-DPOTx {
+  -webkit-mask: none !important;
+  mask: none !important;
+  background-color: transparent !important;
+  aspect-ratio: auto !important;
+  width: 16px !important;
+  height: 16px !important;
+  object-fit: contain;
+  filter: invert(1) !important;
+}
