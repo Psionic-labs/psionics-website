@@ -157,7 +157,7 @@ var r,
 function p(e, t) {
   return {
     description: `Made with Site`,
-    favicon: `https://framerusercontent.com/assets/logo-mark-light.svg`,
+    favicon: `/content/assets/icon.png`,
     robots: `max-image-preview:large`,
     title: `Psionics`,
   };
