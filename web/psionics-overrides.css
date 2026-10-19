@@ -6,6 +6,13 @@
   display: none !important;
 }
 
+/* Phone menu: remove the Privacy, Terms, and Acceptable Use entries. */
+.framer-2uc7fc-container,
+.framer-1izjcra-container,
+.framer-kuflit-container {
+  display: none !important;
+}
+
 /* Remove YouTube while retaining the LinkedIn and X marks. */
 [data-framer-name="Social Links"]>[class*="-container"]:has(.framer-bHJSy) {
   display: none !important;
