@@ -200,7 +200,6 @@
 }
 
 /* Removed from the public navigation. */
-#main div:has(> a[href*="case-studies"]),
 #main div:has(> a[href*="careers"]),
 #main div:has(> a[href*="#pricing"]) {
   display: none !important;

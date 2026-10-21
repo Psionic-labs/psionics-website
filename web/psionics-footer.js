@@ -2,11 +2,6 @@
   var navishSelector='nav a, header a, footer a, [data-framer-name="Pages"] a';
   var PAGES_RE=/^(?:\.\.\/|\.\.\/\.\.\/|\.\/|\/)?(?:web\/)?(about|contact|projects|case-studies|careers|index|home)(?:\.html)?(?=$|[?#])/i;
 
-  function isLocal(){
-    var h=location.hostname;
-    return location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='::1'||h==='[::1]';
-  }
-
   // file:// has no server, so pages must be linked as filenames there.
   // Over http (including localhost) use the clean URLs the rewrites serve,
   // otherwise Framer's router sees an unknown route and renders the home page.
@@ -102,9 +97,9 @@
     var next=normalizeHref(href);
     if(!next)return;
     var page=sitePage(href);
-    var local=isLocal();
-    if(!local&&!isProjectPage(page))return;
-    if(!local&&next===href)return;
+    if(!isProjectPage(page))return;
+    // Framer's client router does not know about /projects and sends the click
+    // to a stale route, so always do a full page load for the Projects page.
     link.setAttribute('href',next);
     event.preventDefault();
     event.stopImmediatePropagation();

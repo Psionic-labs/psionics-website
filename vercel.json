@@ -8,8 +8,6 @@
     { "source": "/contact/", "destination": "/web/contact.html" },
     { "source": "/projects", "destination": "/web/projects.html" },
     { "source": "/projects/", "destination": "/web/projects.html" },
-    { "source": "/case-studies", "destination": "/web/case-studies.html" },
-    { "source": "/case-studies/", "destination": "/web/case-studies.html" },
     { "source": "/careers", "destination": "/web/careers.html" },
     { "source": "/careers/", "destination": "/web/careers.html" }
   ]
