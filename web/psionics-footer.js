@@ -7,6 +7,13 @@
     return location.protocol==='file:'||h==='localhost'||h==='127.0.0.1'||h==='::1'||h==='[::1]';
   }
 
+  // file:// has no server, so pages must be linked as filenames there.
+  // Over http (including localhost) use the clean URLs the rewrites serve,
+  // otherwise Framer's router sees an unknown route and renders the home page.
+  function isFileMode(){
+    return location.protocol==='file:';
+  }
+
   function sitePage(hrefRaw){
     if(!hrefRaw)return null;
     var href=hrefRaw.trim();
@@ -17,15 +24,15 @@
 
   function hrefForPage(page){
     var hashIndex=hrefForPage._hash;
-    var local=isLocal();
+    var fileMode=isFileMode();
     if(page==='case-studies'||page==='projects'){
-      return local?'projects.html':'/projects';
+      return fileMode?'projects.html':'/projects';
     }
     if(page==='index'||page==='home'){
-      if(local)return 'index.html';
+      if(fileMode)return 'index.html';
       return hashIndex?'/'+hashIndex:'/';
     }
-    if(local)return page+'.html';
+    if(fileMode)return page+'.html';
     return '/'+page+(hashIndex||'');
   }
 
