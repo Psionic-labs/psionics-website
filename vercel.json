@@ -1,4 +1,16 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [{ "source": "/", "destination": "/web/", "permanent": false }]
+  "redirects": [{ "source": "/", "destination": "/web/", "permanent": false }],
+  "rewrites": [
+    { "source": "/about", "destination": "/web/about.html" },
+    { "source": "/about/", "destination": "/web/about.html" },
+    { "source": "/contact", "destination": "/web/contact.html" },
+    { "source": "/contact/", "destination": "/web/contact.html" },
+    { "source": "/projects", "destination": "/web/projects.html" },
+    { "source": "/projects/", "destination": "/web/projects.html" },
+    { "source": "/case-studies", "destination": "/web/case-studies.html" },
+    { "source": "/case-studies/", "destination": "/web/case-studies.html" },
+    { "source": "/careers", "destination": "/web/careers.html" },
+    { "source": "/careers/", "destination": "/web/careers.html" }
+  ]
 }
